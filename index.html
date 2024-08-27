@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de Texto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!--Encabezado de la pagina-->
+    <header> 
+        <img class="header-logo" src="imagenes/logo.svg" alt="Logo de Alura">
+    </header>
+    
+    <!--Seccion principal-->
+    <main>
+        <section>
+            <textarea class="text-area" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+            <h6 class="información">Sólo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="botón-encriptar" onclick="botónEncriptar()">Encriptar</button>
+                <button class="botón-desencriptar" onclick="botónDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea class="mensaje" cols="20" rows="10" ></textarea>
+            <div>
+                <button id="botónCopiar" class="botón-copiar">Copiar</button> 
+            </div>
+        </section>
+    </main>
+
+    <!--Pie de la pagina-->
+    <footer>
+    <p class="copyright">&copy; copyright 2024 - Encriptador de texto - Desarrollado por Rocio Rodriguez</p>
+    
+    <a href="https://www.linkedin.com/in/-rocioagustina-/">
+    <img class="footer-linked" src="imagenes/linkedin.svg" alt="Logo de LinkedIn">
+    </a>
+    
+    <a href="https://github.com/RocioARodriguez">  
+        <img class="footer-git" src="imagenes/github.svg" alt="Logo de GitHub">
+    </a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

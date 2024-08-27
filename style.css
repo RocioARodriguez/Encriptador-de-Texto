@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root { /*con esto creamos una variable para que podamos unir todos los colores y que el código no sea tan largo*/
+    --color-primario: #FFDFD6;
+    --color-secundario: #E3A5C7;
+    --color-terciario: #B692C2;
+    --color-letras: #694F8E;
+    --fuente-inter: "Inter", sans-serif;
+}
+
+
+*{
+    background: var(--color-primario);
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.header-logo { /*logo alura*/
+    margin-top: 40px;  /*padding-top: 10px;*/
+    margin-left: 40px;  /*margin-left: 10px;*/
+    width: 3%; /*esto es el tamaño del logo*/
+}
+
+main {
+    display: flex; /*alinea la distribucion del espacio en los items q estan dentro de la interfaz*/
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.text-area { /*el texto que escribirá el usuario*/
+    border: none; /*no aparecerá el borde alrededor del texto ingrese el texto aqui*/
+    color: var(--color-letras);
+    margin-top: 50px;  /*espacio entre el logo o la cabeza y el texto ingrese el texto aqui*/
+    text-transform: lowercase; /*tranforma el texto a minuscula*/
+}
+
+::placeholder { color: var(--color-terciario)} /*color del texto ingrese el texto aqui*/
+    .text-area:focus { /*esto es el foco es decir el recuadro q aparece alrededor del texto ingrese el texto aqui*/
+        outline: none;
+    }
+
+.mensaje {
+    background: var(--color-secundario); /*color del fondo del mensaje ya encriptado del usuario*/
+    background-image: url(./imagenes/Muneco.png);
+    background-repeat: no-repeat; /*no se repita la imagen*/
+    border: none; /*quitamos el borde a la caja*/
+    border-radius: 24px; /*hacemos los bordes mas redondeados*/
+    color: var(--color-letras);
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+}
+
+.mensaje:focus {
+    outline: none /*es para que la caja no resalte al pararse dentro de ella*/
+}
+
+.botones {
+    display: flex; /*posicionara los botones uno al lado del otro*/
+    margin-top: 18px; /*esoacio entre el texto solo letras minusculas y los botones*/
+}
+
+.botón-encriptar {
+    background-color: var(--color-secundario); /*color del fondo del boton*/
+    border: 1px solid var(--color-letras); /*borde del boton*/
+    border-radius: 24px;
+    color: var(--color-letras);
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.botón-desencriptar {
+    background: var(--color-secundario);
+    border: 1px solid var(--color-letras);
+    border-radius: 24px;
+    color: var(--color-letras);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+.botón-copiar {
+    background: var(--color-secundario);
+    border: 1px solid var(--color-letras);
+    border-radius: 24px;
+    color: var(--color-letras);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 108px;
+    margin-top: 402px;
+    position: absolute;
+    width: 336px;
+}
+
+.información { /*texto solo letras minusculas*/
+    color: var(--color-letras);
+    font-size: 18px;
+}
+
+.copyright{
+    margin-top: 15px;
+    padding: 10px;
+    border-top: 2px solid var(--fuente-inter);
+    color: var(--color-letras);
+    text-align: justify;
+    height: 5px;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--color-letras)
+}
+
+.footer-linked {
+    margin-top: 10px;  /*padding-top: 10px;*/
+    margin-left: 10px;  /*margin-left: 10px;*/
+    width: 2%; /*esto es el tamaño del logo*/
+}
+
+.footer-git {
+    margin-top: 10px;  /*padding-top: 10px;*/
+    margin-left: 10px;  /*margin-left: 10px;*/
+    width: 2%; /*esto es el tamaño del logo*/
+}
